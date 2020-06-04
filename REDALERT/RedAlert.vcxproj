@@ -95,7 +95,7 @@
       <AdditionalIncludeDirectories>./win32lib</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <PreprocessorDefinitions>TRUE_FALSE_DEFINED;ENGLISH;WIN32;NDEBUG;_WINDOWS;_USRDLL;REDALERT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>TRUE_FALSE_DEFINED;ENGLISH;WIN32;NDEBUG;_WINDOWS;_USRDLL;REDALERT_EXPORTS;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
       <StructMemberAlignment>1Byte</StructMemberAlignment>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -123,7 +123,7 @@
       <SDLCheck>false</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <PreprocessorDefinitions>TRUE_FALSE_DEFINED;ENGLISH;WIN32;_DEBUG;_WINDOWS;_USRDLL;REDALERT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>TRUE_FALSE_DEFINED;ENGLISH;WIN32;_DEBUG;_WINDOWS;_USRDLL;REDALERT_EXPORTS;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <StructMemberAlignment>1Byte</StructMemberAlignment>
@@ -145,6 +145,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -155,6 +156,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
